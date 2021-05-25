@@ -62,7 +62,7 @@ public class PlaySoundInTacts : MonoBehaviour
             NotesInTact[index].GetComponent<AudioSource>().Play();
             panel.transform.position = ChordsInTact[index].transform.position;
             Notepanel.transform.position = NotesInTact[index].transform.position;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.5f);
             index++;
         }
         panel.SetActive(false);

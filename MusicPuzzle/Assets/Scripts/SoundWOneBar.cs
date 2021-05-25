@@ -30,15 +30,18 @@ public class SoundWOneBar : MonoBehaviour
 
     private IEnumerator PlayAudio()
     {
+        var startPos = panel.transform.position;
         var index = 0;
         while (index < 16 && !StaticCharacteristics.SoundOff)
         {
             ChordsInTact[index].GetComponent<AudioSource>().Play();
             panel.transform.position = ChordsInTact[index].transform.position;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.5f);
             index++;
         }
-        panel.SetActive(false);
+
+        panel.transform.position = startPos;
+        //panel.SetActive(false);
         CheckCorrectChords();
     }
 

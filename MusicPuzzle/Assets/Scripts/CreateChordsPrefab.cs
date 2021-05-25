@@ -7,9 +7,8 @@ using UnityEngine.UI;
 public class CreateChordsPrefab : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private GameObject nota;
-    [SerializeField] private GameObject thisChord;
-    [SerializeField] private Image notePlace;
-    
+    [SerializeField] private GameObject place;
+    [SerializeField] private GameObject perent;
 
     void Start()
     {
@@ -17,15 +16,16 @@ public class CreateChordsPrefab : MonoBehaviour, IPointerClickHandler
 
     void Update()
     {
+        if (perent.transform.childCount > 1)
+            Destroy(perent.transform.GetChild(0).gameObject);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        //Instantiate(nota, transform.parent);
-        notePlace.color = new Color(255, 255, 255, 255);
-        Instantiate(thisChord, transform);
-        notePlace.sprite = nota.GetComponent<Image>().sprite;
-        ChordsStats.FillChordDict(thisChord.GetComponent<PrefabMove>().ChordType, thisChord.gameObject, nota.gameObject);
+        place.GetComponent<Image>().sprite = nota.GetComponent<Image>().sprite;
+        place.GetComponent<AudioSource>().clip = nota.GetComponent<AudioSource>().clip;
+        place.name = nota.name;
+        Instantiate(place, perent.transform);
     }
 
 

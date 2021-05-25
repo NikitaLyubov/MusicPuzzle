@@ -21,7 +21,7 @@ public class CreateMelodyPrefab : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         notePlace.color = new Color(255,255,255,255);
-        Instantiate(note, transform.parent);
+        Instantiate(note, transform);
         notePlace.sprite = noteInTact.GetComponent<Image>().sprite;
         ChordsStats.FillMelodyDict(note.GetComponent<PrefabMove>().MelodyType, null, noteInTact.gameObject);
     }

@@ -18,15 +18,15 @@ public class TactAdding : MonoBehaviour
     private void OnTriggerStay2D(Collider2D other)
     {
         StaticCharacteristics.InTrigger = true;
-        if (!other.gameObject.GetComponent<PrefabMove>().IsDown && other.tag == "Chord")
+        if (!other.gameObject.GetComponent<PrefabMove>().IsDown && other.tag == "Chord" && gameObject.tag == "Chord")
         {
             Destroy(other.gameObject);
             gameObject.name = other.gameObject.name;
-            gameObject.GetComponent<Image>().sprite = ChordsStats.ChordDict[other.GetComponent<PrefabMove>().ChordType].sPrefab.GetComponent<Image>().sprite;
+            gameObject.GetComponent<Image>().sprite = other.GetComponent<Image>().sprite;
             gameObject.GetComponent<AudioSource>().clip = other.GetComponent<AudioSource>().clip;
             gameObject.name = other.gameObject.name;
         }
-        if(!other.gameObject.GetComponent<PrefabMove>().IsDown && other.tag == "Note")
+        if (!other.gameObject.GetComponent<PrefabMove>().IsDown && other.tag == "Note" && gameObject.tag == "Note")
         {
             Destroy(other.gameObject);
             gameObject.name = other.gameObject.name;

@@ -8,7 +8,6 @@ public class PrefabMove : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
 {
     public bool IsDown = false;
 
-    public ChordType ChordType;
     public MelodyType MelodyType;
 
     private void Start()
