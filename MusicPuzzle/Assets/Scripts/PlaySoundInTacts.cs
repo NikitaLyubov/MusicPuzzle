@@ -22,18 +22,22 @@ public class PlaySoundInTacts : MonoBehaviour
 
     private List<string> CorrectChord = new List<string>()
     {
-        "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", 
-        "Empty", "Empty", "Empty", "Empty"
+        "Lia(Clone)", "Empty", "Em(Clone)", "Empty", "F(Clone)", "Empty", "F(Clone)", "Empty", "Lia(Clone)", "Empty", "Em(Clone)", "Empty",
+        "F(Clone)", "Empty", "F(Clone)", "Empty"
     };
 
     private List<string> CorrectNotes = new List<string>()
     {
-        "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty",
-        "Empty", "Empty", "Empty", "Empty"
+        "Empty", "Фа(Clone)", "Empty", "Ре(Clone)", "Empty", "Ре(Clone)", "Empty", "Си(Clone)", "Empty", "Фа(Clone)", "Empty", "Ре(Clone)",
+        "Empty", "Ре(Clone)", "Empty", "Си(Clone)"
     };
+
+    private Vector3 pos1, pos2;
 
     private void Start()
     {
+        pos1 = panel.transform.position;
+        pos2 = Notepanel.transform.position;
     }
 
     private void Update()
@@ -62,11 +66,14 @@ public class PlaySoundInTacts : MonoBehaviour
             NotesInTact[index].GetComponent<AudioSource>().Play();
             panel.transform.position = ChordsInTact[index].transform.position;
             Notepanel.transform.position = NotesInTact[index].transform.position;
-            yield return new WaitForSeconds(0.5f);
+            if (index % 2 == 1)
+                yield return new WaitForSeconds(0.4f);
+            else
+                yield return new WaitForSeconds(1.2f);
             index++;
         }
-        panel.SetActive(false);
-        Notepanel.SetActive(false);
+        //panel.SetActive(false);
+        //Notepanel.SetActive(false);
         
         CheckCorrectChords();
         CheckCorrectNotes();
@@ -75,7 +82,9 @@ public class PlaySoundInTacts : MonoBehaviour
     public void StopPlayingSound()
     {
         StaticCharacteristics.SoundOff = true;
-        panel.SetActive(false);
+        panel.transform.position = pos1;
+        Notepanel.transform.position = pos2;
+        //panel.SetActive(false);
     }
 
     private void CheckCorrectChords()

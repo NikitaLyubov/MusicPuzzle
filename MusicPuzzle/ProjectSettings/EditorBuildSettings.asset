@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 3aaa79e21392c72429f42edfcf239949
   - enabled: 1
-    path: Assets/Scenes/ChordLvl.unity
+    path: Assets/Scenes/ChordDemo.unity
     guid: 65c64b44413fde24c89c94cb9df889df
+  - enabled: 1
+    path: Assets/Scenes/ChordLvl.unity
+    guid: 0b797869a39ebbd45b084661d21b7b6c
   - enabled: 1
     path: Assets/Scenes/MelodyLvl.unity
     guid: 2cda990e2423bbf4892e6590ba056729

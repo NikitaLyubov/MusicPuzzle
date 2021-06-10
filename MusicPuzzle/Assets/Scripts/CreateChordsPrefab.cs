@@ -9,6 +9,8 @@ public class CreateChordsPrefab : MonoBehaviour, IPointerClickHandler
     [SerializeField] private GameObject nota;
     [SerializeField] private GameObject place;
     [SerializeField] private GameObject perent;
+    [SerializeField] private GameObject hint;
+    [SerializeField] private GameObject nextHint;
 
     void Start()
     {
@@ -26,7 +28,12 @@ public class CreateChordsPrefab : MonoBehaviour, IPointerClickHandler
         place.GetComponent<AudioSource>().clip = nota.GetComponent<AudioSource>().clip;
         place.name = nota.name;
         Instantiate(place, perent.transform);
+        if (StaticCharacteristics.FirstHintIsActive && gameObject.tag == "Demo")
+        {
+            hint.SetActive(false);
+            nextHint.SetActive(true);
+        }
+        StaticCharacteristics.FirstHintIsActive = false;
     }
-
 
 }

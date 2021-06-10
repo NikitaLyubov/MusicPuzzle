@@ -5,15 +5,12 @@ using UnityEngine.UI;
 
 public class DeleteSelected : MonoBehaviour
 {
+    [SerializeField] private GameObject hint;
+    [SerializeField] private GameObject nextHint;
     private Sprite component;
     void Start()
     {
         component = GetComponent<Image>().sprite;
-    }
-
-    void Update()
-    {
-        
     }
 
     public void ClearButton()
@@ -21,5 +18,12 @@ public class DeleteSelected : MonoBehaviour
         gameObject.name = "Empty";
         gameObject.GetComponent<Image>().sprite = component;
         gameObject.GetComponent<AudioSource>().clip = null;
+        if (StaticCharacteristics.ThirdHintIsActive)
+        {
+            hint.SetActive(false);
+            nextHint.SetActive(true);
+        }
+
+        StaticCharacteristics.ThirdHintIsActive = false;
     }
 }

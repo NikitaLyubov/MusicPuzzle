@@ -69,8 +69,11 @@
     <Compile Include="Assets\Scripts\CreateChordsPrefab.cs" />
     <Compile Include="Assets\Scripts\CreateMelodyPrefab.cs" />
     <Compile Include="Assets\Scripts\DeleteSelected.cs" />
+    <Compile Include="Assets\Scripts\HintsScript.cs" />
+    <Compile Include="Assets\Scripts\PlayE.cs" />
     <Compile Include="Assets\Scripts\PlaySoundInTacts.cs" />
     <Compile Include="Assets\Scripts\PrefabMove.cs" />
+    <Compile Include="Assets\Scripts\QuitBtn.cs" />
     <Compile Include="Assets\Scripts\Scenes.cs" />
     <Compile Include="Assets\Scripts\ShowPanel.cs" />
     <Compile Include="Assets\Scripts\SoundWOneBar.cs" />

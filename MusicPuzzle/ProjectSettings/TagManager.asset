@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chord
   - Note
+  - Demo
   layers:
   - Default
   - TransparentFX

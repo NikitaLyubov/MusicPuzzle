@@ -4,8 +4,10 @@ ScriptsOnlyBuild:
     - CreateChordsPrefab
     - CreateMelodyPrefab
     - DeleteSelected
+    - HintsScript
     - PlaySoundInTacts
     - PrefabMove
+    - QuitBtn
     - Scenes
     - ShowPanel
     - SoundWOneBar
@@ -62,35 +64,126 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11270}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11710}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11662}
     - Class: 114
-      Script: {instanceID: 12068}
+      Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 12368}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 12288}
     - Class: 114
-      Script: {instanceID: 13398}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 13758}
+      Script: {instanceID: 12412}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 12904}
     - Class: 114
-      Script: {instanceID: 20650}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 221470}
+      Script: {instanceID: 13408}
+    - Class: 114
+      Script: {instanceID: 13768}
+    - Class: 114
+      Script: {instanceID: 14380}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    Assets/Scenes/ChordDemo.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11244}
+    - Class: 114
+      Script: {instanceID: 11246}
+    - Class: 114
+      Script: {instanceID: 11270}
+    - Class: 114
+      Script: {instanceID: 11370}
+    - Class: 114
+      Script: {instanceID: 11562}
+    - Class: 114
+      Script: {instanceID: 11662}
+    - Class: 114
+      Script: {instanceID: 11714}
+    - Class: 114
+      Script: {instanceID: 11902}
+    - Class: 114
+      Script: {instanceID: 12072}
+    - Class: 114
+      Script: {instanceID: 12192}
+    - Class: 114
+      Script: {instanceID: 12288}
+    - Class: 114
+      Script: {instanceID: 12362}
+    - Class: 114
+      Script: {instanceID: 12376}
+    - Class: 114
+      Script: {instanceID: 12412}
+    - Class: 114
+      Script: {instanceID: 13294}
+    - Class: 114
+      Script: {instanceID: 13768}
+    - Class: 114
+      Script: {instanceID: 14380}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -137,33 +230,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11270}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11710}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11662}
     - Class: 114
-      Script: {instanceID: 12068}
+      Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 12368}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 12404}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 12288}
     - Class: 114
-      Script: {instanceID: 13758}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 12412}
     - Class: 114
-      Script: {instanceID: 221470}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 256144}
+      Script: {instanceID: 13768}
+    - Class: 114
+      Script: {instanceID: 14380}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,33 +305,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11270}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11710}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11898}
+      Script: {instanceID: 11662}
     - Class: 114
-      Script: {instanceID: 12068}
+      Script: {instanceID: 11714}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 12368}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 13758}
+      Script: {instanceID: 12288}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 20650}
+      Script: {instanceID: 12904}
     - Class: 114
-      Script: {instanceID: 221470}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 256144}
+      Script: {instanceID: 13768}
+    - Class: 114
+      Script: {instanceID: 14380}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -262,7 +359,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -271,20 +372,22 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11270}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 13758}
+      Script: {instanceID: 12288}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 13768}
     - Class: 114
-      Script: {instanceID: 221470}
+      Script: {instanceID: 14380}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -305,6 +408,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -329,6 +438,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Scenes
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -379,12 +494,6 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -395,6 +504,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: UnityEngine.U2D
     className: SpriteShapeController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: QuitBtn
   - hash:
       serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
@@ -445,7 +560,7 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: d8545a17ca04077e57cc9d62b17b4179
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DeleteSelected
@@ -493,7 +608,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: d8545a17ca04077e57cc9d62b17b4179
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TactAdding
@@ -509,6 +624,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: cfd1dd114ece2b3fd935d0cf9935de94
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundWOneBar
   - hash:
       serializedVersion: 2
       Hash: 5f170942ee57c7a568f5bcfc7521adea
@@ -547,13 +668,19 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HintsScript
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: abf1accb284d242b428f6d911dc584cb
+      Hash: 72119720125ed8bbb4475dd9b7c2493e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PrefabMove
@@ -565,7 +692,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 511f816d7393b53b4a333ba4652710aa
+      Hash: 4fccc4bff52a5d51fc598cc9d9541741
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CreateChordsPrefab
@@ -601,6 +728,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 118d7fbb44b05673cb83b5f3cca9fba5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CreateMelodyPrefab
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -631,7 +764,7 @@ ScriptsOnlyBuild:
     className: InputField
   - hash:
       serializedVersion: 2
-      Hash: 47aaaa5dd7b44dddbdb3e7726bcc33f5
+      Hash: 26faeeb59accc6915286936788523387
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShowPanel
@@ -827,28 +960,11 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: faeb6e8c473c5bbadd92f21870710cb0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CreateMelodyPrefab
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Scenes
-  - hash:
-      serializedVersion: 2
-      Hash: 81ff0d104776c23df92a0deda76b6a9b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SoundWOneBar
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
+  - Assets/Scenes/ChordDemo.unity
   - Assets/Scenes/ChordLvl.unity
   - Assets/Scenes/MelodyLvl.unity
   - Assets/Scenes/Chord&MelodyLvl.unity
-  playerPath: "D:/\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B/Unity Projects/Game/MusicPuzle.exe"
+  playerPath: "D:/\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B/MusicPuzzle/Game/MusicPuzle.exe"
