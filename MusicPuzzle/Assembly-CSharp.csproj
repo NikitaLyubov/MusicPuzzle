@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\SoundWOneBar.cs" />
     <Compile Include="Assets\Scripts\StaticCharacteristics.cs" />
     <Compile Include="Assets\Scripts\TactAdding.cs" />
+    <Compile Include="Assets\Scripts\VolumeChganger.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Programs/Unity/2019.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

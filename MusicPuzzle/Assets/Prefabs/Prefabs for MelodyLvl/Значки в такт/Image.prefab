@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 10daa1dee3350074486a276ee0991fb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16d52085baf7c9147b8c0aae2ec24f52, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -149,7 +149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ea4bf76ca208b594ea22e9e0c1203612, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 49dba724928fcab4993b4756b1b2c128, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
