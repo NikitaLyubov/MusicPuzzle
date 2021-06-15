@@ -36,11 +36,8 @@ public class SoundWOneBar : MonoBehaviour
     {
         backgroundPanel.GetComponent<Image>().color = color;
         StaticCharacteristics.SoundOff = false;
-        panel.SetActive(true); 
-        if (gameObject.tag == "Note")
-            StartCoroutine(PlayMelody());
-        else
-            StartCoroutine(PlayAudio());
+        panel.SetActive(true);
+        StartCoroutine(gameObject.tag == "Note" ? PlayMelody() : PlayAudio());
         StaticCharacteristics.FourthHintIsActive = false;
     }
 
@@ -52,12 +49,7 @@ public class SoundWOneBar : MonoBehaviour
         {
             ChordsInTact[index].GetComponent<AudioSource>().Play();
             panel.transform.position = ChordsInTact[index].transform.position;
-            //if (index == 2 || index == 4 || index == 6)
-            //    yield return new WaitForSeconds(1.2f);
-            //if (index == 3 || index == 7)
-            //    yield return new WaitForSeconds(2f);
-            //else
-                yield return new WaitForSeconds(1.6f);
+            yield return new WaitForSeconds(1.6f);
             
             index++;
         }
@@ -113,9 +105,9 @@ public class SoundWOneBar : MonoBehaviour
             else
             {
                 backgroundPanel.GetComponent<Image>().color = wrongColor;
+                nextLvlButton.SetActive(false);
                 break;
             }
         }
-
     }
 }
